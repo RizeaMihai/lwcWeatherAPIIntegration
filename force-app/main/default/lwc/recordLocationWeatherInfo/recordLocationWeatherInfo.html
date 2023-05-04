@@ -1,0 +1,33 @@
+<template>
+    <template if:true={recordLocation}>
+        <div class="validData">
+            <lightning-card class="weatherCard slds-var-p-around_medium" if:false={badRequest} title={labels.CARD_TITLE}>
+                <div class="slds-var-p-top_xx-small slds-var-p-left_medium">
+                    <img src={weatherDataIcon}>
+                    <p if:true={conditionDetails}>{conditionDetails}</p>
+                    <br>
+                    <p if:true={recordLocation}><b>{labels.LOCATION_TEXT}</b>: {recordLocation}</p>
+                    <p if:true={tomorrowMinTemperature}><b>{labels.MIN_TEMP}</b>: <span style="color: #0739d2;">{tomorrowMinTemperature} &deg;{temperatureUnit}</span></p>
+                    <p if:true={tomorrowMaxTemperature}><b>{labels.MAX_TEMP}</b>: <span style="color: #f04b4c;">{tomorrowMaxTemperature} &deg;{temperatureUnit}</span></p>
+                    <p if:true={tomorrowAvverageTemperature}><b>{labels.AVG_TEMP}</b>: {tomorrowAvverageTemperature} &deg;{temperatureUnit}</p>
+                </div>
+                <div style="max-width: 250px;" class="slds-var-p-around_medium lgc-bg">
+                    <lightning-input class="inputCity" type="text" value={searchValue} placeholder={labels.PLACEHOLDER} label={labels.INPUT_TEXT}  onchange={handleInputChange}>
+                    </lightning-input>
+                    <div class="slds-var-p-top_xx-small">
+                        <lightning-button variant="brand" class="searchButton" label={labels.SEARCH_BTN} onclick={handleSearchForInput}></lightning-button>
+                        <lightning-button variant="brand" class="updateButton" label={labels.UPDATE_BTN} onclick={handleRecordUpdate}></lightning-button>
+                    </div>
+                </div>
+            </lightning-card>
+        </div>
+    </template>
+    <template if:true={badRequest}>
+        <lightning-card title="Tomorrow's Weather" >
+            <div class="slds-var-p-top_xx-small slds-var-p-left_medium">
+                <img class="slds-align_absolute-center" style="max-height: 100px" alt="invalid location" src={invalidLocationImage}/>
+                <p class="badRequestText slds-align_absolute-center slds-var-p-top_xx-small slds-text-color_error">{labels.BAD_REQUEST_TEXT}</p>
+            </div>
+        </lightning-card>
+    </template>
+</template>

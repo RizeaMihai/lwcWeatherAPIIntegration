@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AverageTemperatureText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AverageTemperatureText</shortDescription>
+        <value>Average temperature</value>
+    </labels>
+    <labels>
+        <fullName>BadRequestText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Bad Request Text</shortDescription>
+        <value>Invalid city. If you want to see tomorrow&apos;s weather forecast, please add a valid Mailing City name.</value>
+    </labels>
+    <labels>
+        <fullName>CardTitleText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>CardTitleText</shortDescription>
+        <value>Tomorrow&apos;s Weather</value>
+    </labels>
+    <labels>
+        <fullName>InputLabelText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>InputLabelText</shortDescription>
+        <value>Search for other City:</value>
+    </labels>
+    <labels>
+        <fullName>LocationText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>LocationText</shortDescription>
+        <value>Location</value>
+    </labels>
+    <labels>
+        <fullName>MaxTemperatureText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MaxTemperatureText</shortDescription>
+        <value>Max temperature</value>
+    </labels>
+    <labels>
+        <fullName>MinTemperatureText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>MinTemperatureText</shortDescription>
+        <value>Min temperature</value>
+    </labels>
+    <labels>
+        <fullName>PlaceholderText</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>PlaceholderText</shortDescription>
+        <value>Type city name here...</value>
+    </labels>
+    <labels>
+        <fullName>SearchButtonLabel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>SearchButtonLabel</shortDescription>
+        <value>Search</value>
+    </labels>
+    <labels>
+        <fullName>UpdateButtonLabel</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>UpdateButtonLabel</shortDescription>
+        <value>Update</value>
+    </labels>
+</CustomLabels>

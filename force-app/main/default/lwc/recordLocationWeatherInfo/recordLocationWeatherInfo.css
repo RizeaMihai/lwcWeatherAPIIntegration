@@ -1,0 +1,55 @@
+@font-face {
+    /*
+        font family is used to give a name to the custom font,
+        you use this for referencing the custom font later
+    */
+    font-family: "myCustomFont";
+
+    /*
+        This is the location of the Custom Font as a static resource
+    */
+    src: url('/resource/customFontPoppins/Poppins-Regular.ttf') format('TrueType');
+}
+
+:host {
+    --gradient-color: linear-gradient(#4016ca, #9198e5);
+}
+
+.validData {
+    --sds-c-card-color-background: var(--gradient-color);
+}
+
+.weatherCard {
+    color: #fff;
+    font-family: "myCustomFont";
+}
+
+.inputCity {
+    --slds-c-input-color-background: var(--gradient-color);
+    --slds-c-input-color-border: #fff;
+    --slds-c-input-color-border-focus: #4016ca;
+    -webkit-text-fill-color: #fff;
+}
+
+p {
+    font-family: "myCustomFont";
+    color: #fff;
+}
+
+.badRequestText{
+    font-family: "myCustomFont";
+    color: red;
+}
+
+.searchButton {
+    font-family: "myCustomFont";
+    --slds-c-button-brand-color-background: var(--gradient-color);
+    --slds-c-button-brand-color-background-hover: #9198e5;
+}
+
+.updateButton {
+    font-family: "myCustomFont";
+    --slds-c-button-brand-color-background: #646fdf;
+    --slds-c-button-brand-color-background-hover: #737bd1;
+    padding-left: 55px;
+}
