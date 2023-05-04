@@ -1,18 +1,24 @@
-# Salesforce DX Project: Next Steps
+# Salesforce - Weather API LWC
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+## ![Weather API](https://cdn.weatherapi.com/v4/images/weatherapi_logo.png) Brief overview of the LWC that utilizes the Weather API integration (find out more at [Weather Api](https://www.weatherapi.com/)).
 
-## How Do You Plan to Deploy Your Changes?
+This is a Lightning Web Component (LWC) that allows users to search for minimum weather data based on a valid city name. It also provides an option to update the **`WeatherData`** field with additional data, based on the search that the user makes.
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+## **Features**
 
-## Configure Your Salesforce DX Project
+- Search for minimum weather data based on a valid city name.
+- Update the **`WeatherData`** field with additional data based on the search.
+- Update the **`Mailing City`** field on the Contact record.
+- Handle invalid city name search and display a specific image with a text message to inform the user that they have searched for an invalid city. The record update will not take place in this case.
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+## **Usage**
 
-## Read All About It
+To use this component, you can drag and drop it onto a Lightning page or a record page.
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+## **Implementation**
+
+This component uses the OpenWeather API to fetch the weather data for a given city name. It also uses the Salesforce standard features to update the **`Mailing City`** field on the Contact record.
+
+## **Credits**
+
+This component was developed by Mihai Rizea.
